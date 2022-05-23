@@ -81,10 +81,10 @@
 						<div class="web-font q-card__section q-card__section--vert">
 							<div class="row items-baseline">
 								<div class="list-day-text color-text">
-									{{ monents(index, "D") }}
+									{{ moments(index, "D") }}
 								</div>
 								<div class="list-time-text q-ml-md col-grow color-desc">
-									{{ monents(index, "M") }}月 · {{ monents(index, "T") }}
+									{{ moments(index, "M") }}月 · {{ moments(index, "T") }}
 								</div>
 								<div class="list-category-text row items-center color-desc" style="display: none">
 									<i
@@ -158,7 +158,7 @@ export default {
 		});
 	},
 	methods: {
-		monents(index, type) {
+		moments(index, type) {
 			let time = new Date(this.lists[index].date * 1000);
 			switch (type) {
 				case "Y":
