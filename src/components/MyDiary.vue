@@ -147,7 +147,7 @@ export default {
 		};
 	},
 	mounted() {
-		this.axios.get("https://codingboy.tk:444/").then((res) => {
+		this.axios.get("https://codingboy.tk:444/api/").then((res) => {
 			this.lists = res.data.reverse();
 			console.log(this.lists);
 			for (let i = 0; i < this.lists.length; i++) {
@@ -288,6 +288,7 @@ body {
 	font-family: "LXGW WenKai Lite";
 }
 .light .color-bg-list {
+	height: 100vh;
 	background-color: #fafafa;
 }
 .dark .color-bg-content {
