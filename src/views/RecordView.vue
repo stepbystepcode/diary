@@ -39,6 +39,7 @@
 					</button>
 					<div class="record-header row justify-center">
 						<button
+							@click="submit()"
 							tabindex="0"
 							type="button"
 							role="button"
@@ -201,6 +202,7 @@
 									style=""
 								>
 									<textarea
+										v-model="textarea"
 										tabindex="0"
 										rows="1"
 										id="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
@@ -303,24 +305,15 @@ export default {
 	components: {},
 	data() {
 		return {
-			lists: [],
-			imgList: [],
+			textarea: "",
+			time: 0,
+			img: "",
+			weather: "",
 		};
-	},
-	mounted() {
-		this.axios.get("https://codingboy.tk:444/").then((res) => {
-			this.lists = res.data.reverse();
-			console.log(this.lists);
-			for (let i = 0; i < this.lists.length; i++) {
-				let array = this.lists[i].img.split(",");
-				this.imgList.push(array);
-				console.log(this.imgList);
-			}
-		});
 	},
 	methods: {
 		monents(index, type) {
-			let time = new Date(this.lists[index].date * 1000);
+			let time = new Date();
 			switch (type) {
 				case "Y":
 					return time.getFullYear();
@@ -352,6 +345,14 @@ export default {
 		},
 		onBeforeSlide: () => {
 			console.log("calling before slide");
+		},
+		submit: () => {
+			this.axios.post("https://codingboy.tk/api/insert", {
+				time: new Date() / 1000,
+				content: this.textarea,
+				img: this.img,
+				weather: this.weather,
+			});
 		},
 	},
 };
