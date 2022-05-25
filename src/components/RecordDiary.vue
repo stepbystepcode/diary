@@ -302,6 +302,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
 	components: {},
 	data() {
@@ -350,7 +351,7 @@ export default {
 			console.log("calling before slide");
 		},
 		submit: () => {
-			this.axios.post("https://codingboy.tk/api/insert", {
+			axios.post("https://codingboy.tk/api/insert", {
 				//time: this.moments("O"),
 				//content: this.textarea,
 				//img: this.img,
