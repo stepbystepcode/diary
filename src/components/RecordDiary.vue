@@ -351,7 +351,7 @@ export default {
 			console.log("calling before slide");
 		},
 		submit: () => {
-			axios.post("https://codingboy.tk/api/insert", {
+			axios.get("https://codingboy.tk/api/insert", {
 				//time: this.moments("O"),
 				//content: this.textarea,
 				//img: this.img,
