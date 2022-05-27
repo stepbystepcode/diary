@@ -351,11 +351,15 @@ export default {
 			console.log("calling before slide");
 		},
 		submit: () => {
+			const headers = {
+				"Content-Type": "application/x-www-form-urlencoded",
+			};
 			axios.post("https://codingboy.tk:444/api/insert", {
 				//time: this.moments("O"),
 				//content: this.textarea,
 				//img: this.img,
 				//weather: this.weather,
+				headers: headers,
 				time: 12342,
 				content: "hhh",
 				img: "",
