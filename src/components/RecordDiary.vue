@@ -302,7 +302,10 @@
 					</div>
 				</div>
 				<input type="submit" value="提交" />
+				<input type="text" name="time" />
 				<input type="text" name="content" />
+				<input type="text" name="img" />
+				<input type="text" name="weather" />
 			</form>
 		</div>
 	</div>
