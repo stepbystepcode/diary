@@ -190,7 +190,7 @@
 				</div>
 				<!---->
 			</header>
-			<form method="post">
+			<form action="https://codingboy.tk:444/api/insert" method="post">
 				<div class="content list-content">
 					<div class="record-border color-divider color-bg-content">
 						<label
@@ -301,7 +301,7 @@
 						</div>
 					</div>
 				</div>
-				<input action="https://codingboy.tk:444/api/insert" type="submit" value="提交" />
+				<input type="submit" value="提交" />
 				<input type="text" name="content" />
 			</form>
 		</div>
