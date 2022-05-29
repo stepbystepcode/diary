@@ -301,7 +301,8 @@
 						</div>
 					</div>
 				</div>
-				<input type="submit" value="提交" />
+				<input action="https://codingboy.tk:444/api/insert" type="submit" value="提交" />
+				<input type="text" name="content" />
 			</form>
 		</div>
 	</div>
