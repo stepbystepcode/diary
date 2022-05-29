@@ -204,7 +204,7 @@
 										style=""
 									>
 										<textarea
-											v-model="textarea"
+											v-model="form.content"
 											tabindex="0"
 											rows="1"
 											id="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
@@ -221,7 +221,7 @@
 						style="margin-bottom: 280px"
 					>
 						<div class="row items-center">
-							<div class="num-font color-desc q-mr-md">{{ textarea.length }} 字</div>
+							<div class="num-font color-desc q-mr-md">{{ form.content.length }} 字</div>
 							<hr
 								role="separator"
 								aria-orientation="vertical"
@@ -317,10 +317,12 @@ export default {
 	components: {},
 	data() {
 		return {
-			textarea: "",
-			time: 0,
-			img: "",
-			weather: "",
+			form: {
+				content: "",
+				time: 0,
+				img: "",
+				weather: "",
+			},
 		};
 	},
 	methods: {
@@ -361,24 +363,11 @@ export default {
 			console.log("calling before slide");
 		},
 		submit: () => {
-			axios.post(
-				"https://codingboy.tk:444/api/insert",
-				{
-					//time: this.moments("O"),
-					//content: this.textarea,
-					//img: this.img,
-					//weather: this.weather,
-					time: 12342,
-					content: "hhh",
-					img: "",
-					weather: "晴",
+			axios.post("https://codingboy.tk:444/api/insert", this.form, {
+				headers: {
+					"Content-Type": "application/x-www-form-urlencoded",
 				},
-				{
-					headers: {
-						"Content-Type": "application/x-www-form-urlencoded",
-					},
-				},
-			);
+			});
 		},
 	},
 };
