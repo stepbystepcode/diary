@@ -190,113 +190,119 @@
 				</div>
 				<!---->
 			</header>
-			<div class="content list-content">
-				<div class="record-border color-divider color-bg-content">
-					<label
-						for="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
-						class="q-field row no-wrap items-start record-text color-bg-content color-text q-textarea q-textarea--autogrow q-field--borderless q-validation-component"
-						style="margin: 12px 32px 24px; font-size: 15px"
-						><div class="q-field__inner relative-position col self-stretch">
-							<div tabindex="-1" class="q-field__control relative-position row no-wrap">
-								<div
-									class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
-									style=""
-								>
-									<textarea
-										v-model="textarea"
-										tabindex="0"
-										rows="1"
-										id="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
-										type="text"
-										class="q-field__native q-placeholder"
-										style="height: 52px"
-									></textarea>
-								</div>
-							</div></div
-					></label>
-				</div>
-				<div class="row justify-between q-mt-md q-mb-lg items-center" style="margin-bottom: 280px">
-					<div class="row items-center">
-						<div class="num-font color-desc q-mr-md">{{ textarea.length }} 字</div>
-						<hr
-							role="separator"
-							aria-orientation="vertical"
-							class="q-separator q-separator q-separator--vertical q-separator--vertical-inset"
-						/>
-						<button
-							tabindex="0"
-							type="button"
-							role="button"
-							class="q-btn q-btn-item non-selectable no-outline color-desc q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-btn--wrap"
-						>
-							<span class="q-focus-helper"></span
-							><span class="q-btn__wrapper col row q-anchor--skip"
-								><span
-									class="q-btn__content text-center col items-center q-anchor--skip justify-center row"
-								>
-									Redmi 10X
-								</span></span
-							>
-						</button>
-						<hr
-							role="separator"
-							aria-orientation="vertical"
-							class="q-separator q-separator q-separator--vertical q-separator--vertical-inset"
-						/>
+			<form method="post">
+				<div class="content list-content">
+					<div class="record-border color-divider color-bg-content">
 						<label
-							for="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372"
-							class="q-field row no-wrap items-start q-select q-field--auto-height q-select--without-input q-select--without-chips q-select--single q-field--borderless q-field--float q-field--dense q-validation-component"
-							style="padding-left: 20px"
+							for="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
+							class="q-field row no-wrap items-start record-text color-bg-content color-text q-textarea q-textarea--autogrow q-field--borderless q-validation-component"
+							style="margin: 12px 32px 24px; font-size: 15px"
 							><div class="q-field__inner relative-position col self-stretch">
 								<div tabindex="-1" class="q-field__control relative-position row no-wrap">
 									<div
 										class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
+										style=""
 									>
-										<div class="q-field__native row items-center">
-											<span>选择天气</span>
-											<div
-												id="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372"
-												tabindex="0"
-												role="combobox"
-												aria-multiselectable="false"
-												aria-expanded="false"
-												aria-owns="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372_lb"
-												aria-activedescendant="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372_-1"
-												class="no-outline"
-											></div>
-										</div>
-									</div>
-									<div
-										class="q-field__append q-field__marginal row no-wrap items-center q-anchor--skip"
-									>
-										<i
-											aria-hidden="true"
-											role="presentation"
-											class="q-select__dropdown-icon material-icons q-icon notranslate"
-											><svg
-												xmlns="http://www.w3.org/2000/svg"
-												class="icon icon-tabler icon-tabler-caret-down"
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												stroke-width="2"
-												stroke="currentColor"
-												fill="#000"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											>
-												<desc>
-													Download more icon variants from https://tabler-icons.io/i/caret-down
-												</desc>
-												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-												<path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)"></path></svg
-										></i>
+										<textarea
+											v-model="textarea"
+											tabindex="0"
+											rows="1"
+											id="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
+											type="text"
+											class="q-field__native q-placeholder"
+											style="height: 52px"
+										></textarea>
 									</div>
 								</div></div
 						></label>
 					</div>
+					<div
+						class="row justify-between q-mt-md q-mb-lg items-center"
+						style="margin-bottom: 280px"
+					>
+						<div class="row items-center">
+							<div class="num-font color-desc q-mr-md">{{ textarea.length }} 字</div>
+							<hr
+								role="separator"
+								aria-orientation="vertical"
+								class="q-separator q-separator q-separator--vertical q-separator--vertical-inset"
+							/>
+							<button
+								tabindex="0"
+								type="button"
+								role="button"
+								class="q-btn q-btn-item non-selectable no-outline color-desc q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-btn--wrap"
+							>
+								<span class="q-focus-helper"></span
+								><span class="q-btn__wrapper col row q-anchor--skip"
+									><span
+										class="q-btn__content text-center col items-center q-anchor--skip justify-center row"
+									>
+										Redmi 10X
+									</span></span
+								>
+							</button>
+							<hr
+								role="separator"
+								aria-orientation="vertical"
+								class="q-separator q-separator q-separator--vertical q-separator--vertical-inset"
+							/>
+							<label
+								for="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372"
+								class="q-field row no-wrap items-start q-select q-field--auto-height q-select--without-input q-select--without-chips q-select--single q-field--borderless q-field--float q-field--dense q-validation-component"
+								style="padding-left: 20px"
+								><div class="q-field__inner relative-position col self-stretch">
+									<div tabindex="-1" class="q-field__control relative-position row no-wrap">
+										<div
+											class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
+										>
+											<div class="q-field__native row items-center">
+												<span>选择天气</span>
+												<div
+													id="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372"
+													tabindex="0"
+													role="combobox"
+													aria-multiselectable="false"
+													aria-expanded="false"
+													aria-owns="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372_lb"
+													aria-activedescendant="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372_-1"
+													class="no-outline"
+												></div>
+											</div>
+										</div>
+										<div
+											class="q-field__append q-field__marginal row no-wrap items-center q-anchor--skip"
+										>
+											<i
+												aria-hidden="true"
+												role="presentation"
+												class="q-select__dropdown-icon material-icons q-icon notranslate"
+												><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-caret-down"
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													stroke-width="2"
+													stroke="currentColor"
+													fill="#000"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												>
+													<desc>
+														Download more icon variants from https://tabler-icons.io/i/caret-down
+													</desc>
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)"></path></svg
+											></i>
+										</div>
+									</div></div
+							></label>
+						</div>
+					</div>
 				</div>
-			</div>
+				<input type="submit" value="提交" />
+			</form>
 		</div>
 	</div>
 </template>
