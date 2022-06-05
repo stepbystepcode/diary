@@ -331,7 +331,7 @@ export default {
 				case "D":
 					return time.getDate();
 				case "T":
-					return `${time.getHours()}:${time.getMinutes()}`;
+					return `${time.getHours()}:${(time.getMinutes()+'').padStart(2,'0')}`;
 				case "O":
 					return time / 1000;
 			}

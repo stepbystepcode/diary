@@ -168,7 +168,7 @@ export default {
 				case "D":
 					return time.getDate();
 				case "T":
-					return `${time.getHours()}:${time.getMinutes()}`;
+					return `${time.getHours()}:${(time.getMinutes()+'').padStart(2,'0')}`;
 			}
 		},
 		changeTheme() {
