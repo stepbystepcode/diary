@@ -52,83 +52,8 @@
 									><div>{{ moments("M") }}月{{ moments("D") }}日 {{ moments("T") }}</div></span
 								></span
 							></button
-						><label
-							for="f_5119dacf-8bad-42a4-8bbf-6a28772ac4fe"
-							class="q-field row no-wrap items-start web-font record-category q-ml-lg color-text gt-xs q-select q-field--auto-height q-select--without-input q-select--without-chips q-select--single q-field--borderless q-field--float q-validation-component"
-							><div class="q-field__inner relative-position col self-stretch">
-								<div tabindex="-1" class="q-field__control relative-position row no-wrap">
-									<div class="q-field__prepend q-field__marginal row no-wrap items-center">
-										<i
-											aria-hidden="true"
-											role="presentation"
-											class="material-icons q-icon notranslate"
-											style="font-size: 18px"
-											><svg
-												xmlns="http://www.w3.org/2000/svg"
-												class="icon icon-tabler icon-tabler-bookmark"
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												stroke-width="2"
-												stroke="currentColor"
-												fill="#000"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											>
-												<desc>
-													Download more icon variants from https://tabler-icons.io/i/bookmark
-												</desc>
-												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-												<path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"></path></svg
-										></i>
-									</div>
-									<div
-										class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
-									>
-										<div class="q-field__native row items-center">
-											<span>默认分类</span>
-											<div
-												id="f_5119dacf-8bad-42a4-8bbf-6a28772ac4fe"
-												tabindex="0"
-												role="combobox"
-												aria-multiselectable="false"
-												aria-expanded="false"
-												aria-owns="f_5119dacf-8bad-42a4-8bbf-6a28772ac4fe_lb"
-												aria-activedescendant="f_5119dacf-8bad-42a4-8bbf-6a28772ac4fe_-1"
-												class="no-outline"
-											></div>
-										</div>
-									</div>
-									<div
-										class="q-field__append q-field__marginal row no-wrap items-center q-anchor--skip"
-									>
-										<i
-											aria-hidden="true"
-											role="presentation"
-											class="q-select__dropdown-icon material-icons q-icon notranslate"
-											><svg
-												xmlns="http://www.w3.org/2000/svg"
-												class="icon icon-tabler icon-tabler-caret-down"
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												stroke-width="2"
-												stroke="currentColor"
-												fill="#000"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											>
-												<desc>
-													Download more icon variants from https://tabler-icons.io/i/caret-down
-												</desc>
-												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-												<path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)"></path></svg
-										></i>
-									</div>
-									<!---->
-								</div>
-							</div></label
 						>
+					
 					</div>
 					<div class="error-msg" style="display: none"></div>
 					<button
@@ -15288,7 +15213,7 @@ a {
 	width: 90vw;
 	height: auto;
 	padding-top: 100px;
-	padding-bottom: 140px;
+	
 }
 
 .list-image {
