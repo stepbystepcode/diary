@@ -2,7 +2,6 @@
 	<div id="q-app">
 		<div class="q-layout q-layout--standard" style="min-height: 274px">
 			<header
-				@click="submit()"
 				class="q-header q-layout__section--marginal bg-normal text-primary shadow-transition color-bg-content fixed-top"
 			>
 				<div class="header row items-center justify-between q-px-md">
@@ -40,9 +39,9 @@
 					</button>
 					<div class="record-header row justify-center">
 						<button
-							@click="submit()"
+
 							tabindex="0"
-							type="button"
+							type="submit"
 							role="button"
 							class="q-btn q-btn-item non-selectable no-outline record-date color-text q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--wrap"
 						>
@@ -133,6 +132,7 @@
 					</div>
 					<div class="error-msg" style="display: none"></div>
 					<button
+						onclick="document.querySelector('form').submit()"
 						tabindex="0"
 						type="button"
 						role="button"
@@ -190,7 +190,7 @@
 				</div>
 				<!---->
 			</header>
-			<form action="https://codingboy.tk:444/api/insert" method="post">
+			<form action="https://codingboy.tk/diary/insert.php" method="post">
 				<div class="content list-content">
 					<div class="record-border color-divider color-bg-content">
 						<label
@@ -204,7 +204,7 @@
 										style=""
 									>
 										<textarea
-											v-model="form.content"
+											name="content"
 											tabindex="0"
 											rows="1"
 											id="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
@@ -236,7 +236,7 @@
 								<span class="q-focus-helper"></span
 								><span class="q-btn__wrapper col row q-anchor--skip"
 									><span
-										class="q-btn__content text-center col items-center q-anchor--skip justify-center row"
+										class="q-btn__content text-center items-center q-anchor--skip justify-center row"
 									>
 										Redmi 10X
 									</span></span
@@ -301,11 +301,6 @@
 						</div>
 					</div>
 				</div>
-				<input type="submit" value="提交" />
-				<input type="text" name="time" />
-				<input type="text" name="content" />
-				<input type="text" name="img" />
-				<input type="text" name="weather" />
 			</form>
 		</div>
 	</div>
@@ -15459,11 +15454,11 @@ body.body--light .color-desc {
 	color: #a2a2a2;
 }
 
-body.body--light .color-divider {
+.color-divider {
 	color: #eee;
 }
 
-body.body--light textarea {
+textarea {
 	background-color: #fff;
 	color: #333;
 }
