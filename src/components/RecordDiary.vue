@@ -182,45 +182,26 @@
 											class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
 										>
 											<div class="q-field__native row items-center">
-												<span>选择天气</span>
-												<div
-													id="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372"
-													tabindex="0"
-													role="combobox"
-													aria-multiselectable="false"
-													aria-expanded="false"
-													aria-owns="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372_lb"
-													aria-activedescendant="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372_-1"
-													class="no-outline"
-												></div>
+												<select name="weather" class="form-control info-select" @click="select('blur')" @change="select('focus')">
+<option value="晴" selected>晴</option>
+<option value="多云">多云</option>
+<option value="阴">阴</option>
+<option value="雨">雨</option>
+<option value="雷阵雨">雷阵雨</option>
+<option value="雪">雪</option>
+<option value="大风">大风</option>
+<option value="大雾">大雾</option>
+<option value="冰雹">冰雹</option>
+<option value="雾霾">雾霾</option>
+<option value="沙尘暴">沙尘暴</option>
+<option value="日出">日出</option>
+<option value="日落">日落</option>
+<option value="深夜">深夜</option>
+</select>
+											<span class="select">◢</span>
 											</div>
 										</div>
-										<div
-											class="q-field__append q-field__marginal row no-wrap items-center q-anchor--skip"
-										>
-											<i
-												aria-hidden="true"
-												role="presentation"
-												class="q-select__dropdown-icon material-icons q-icon notranslate"
-												><svg
-													xmlns="http://www.w3.org/2000/svg"
-													class="icon icon-tabler icon-tabler-caret-down"
-													width="24"
-													height="24"
-													viewBox="0 0 24 24"
-													stroke-width="2"
-													stroke="currentColor"
-													fill="#000"
-													stroke-linecap="round"
-													stroke-linejoin="round"
-												>
-													<desc>
-														Download more icon variants from https://tabler-icons.io/i/caret-down
-													</desc>
-													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-													<path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)"></path></svg
-											></i>
-										</div>
+									
 									</div></div
 							></label>
 						</div>
@@ -233,6 +214,7 @@
 
 <script>
 import axios from "axios";
+
 export default {
 	components: {},
 	data() {
@@ -290,12 +272,49 @@ export default {
 				},
 			});
 		},
+		select:(method)=>{
+	if (method=="focus") {
+			document.querySelector(".select").style.transform="rotate(45deg) scale(0.7)";
+		
+	}else{
+			document.querySelector(".select").style.transform="rotate(225deg) scale(0.7)";
+
+	}
+		}
 	},
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.select{
+	transform: rotate(45deg) scale(0.7);
+	color: #a2a2a2;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #a2a2a2;
+    background-color: #fff;
+    background-image: none;
+    border: none;
+   }
+
+select::-ms-expand { display: none; }     
+
+/* 定义隐藏下拉框默认样式及图片覆盖下拉按钮 */   
+.info-select{
+    width: 50px;
+    outline:none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -ms-appearance:none;
+    /* background: url(img/down.png) no-repeat scroll right center transparent;            */
+}
 body {
 	font-family: "LXGW WenKai Lite", sans-serif;
 }
