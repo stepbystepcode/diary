@@ -129,6 +129,7 @@
 										style=""
 									>
 										<textarea
+                    v-model="form.content"
 											name="content"
 											tabindex="0"
 											rows="1"
