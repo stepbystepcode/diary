@@ -147,7 +147,7 @@ export default {
 		};
 	},
 	mounted() {
-		this.axios.get("https://codingboy.tk:444/api/").then((res) => {
+		this.axios.get("https://codingboy.tk/diary/fetch_all.php").then((res) => {
 			this.lists = res.data.reverse();
 			console.log(this.lists);
 			for (let i = 0; i < this.lists.length; i++) {

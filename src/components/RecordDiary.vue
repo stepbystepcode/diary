@@ -363,7 +363,7 @@ export default {
 			console.log("calling before slide");
 		},
 		submit: () => {
-			axios.post("https://codingboy.tk:444/api/insert", this.form, {
+			axios.post("https://codingboy.tk/diary/insert.php", this.form, {
 				headers: {
 					"Content-Type": "application/x-www-form-urlencoded",
 				},
