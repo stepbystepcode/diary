@@ -136,6 +136,23 @@
 											class="q-field__native q-placeholder"
 											style="height: 52px"
 										></textarea>
+									
+									</div>
+								</div></div
+						></label>
+					</div>
+						<div class="record-border color-divider color-bg-content">
+						<label
+							for="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
+							class="q-field row no-wrap items-start record-text color-bg-content color-text q-textarea q-textarea--autogrow q-field--borderless q-validation-component"
+							style="margin: 12px 32px 24px; font-size: 15px"
+							><div class="q-field__inner relative-position col self-stretch">
+								<div tabindex="-1" class="q-field__control relative-position row no-wrap">
+									<div
+										class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
+										style=""
+									>
+
 										<textarea
 											class="q-field__native q-placeholder"
 											style="height: 32px"
