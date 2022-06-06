@@ -151,7 +151,7 @@ export default {
 			this.lists = res.data.reverse();
 			console.log(this.lists);
 			for (let i = 0; i < this.lists.length; i++) {
-				let array = this.lists[i].img.split(",");
+				let array = this.lists[i].img.split(" ");
 				this.imgList.push(array);
 				console.log(this.imgList);
 			}
@@ -168,7 +168,7 @@ export default {
 				case "D":
 					return time.getDate();
 				case "T":
-					return `${time.getHours()}:${(time.getMinutes()+'').padStart(2,'0')}`;
+					return `${time.getHours()}:${(time.getMinutes() + "").padStart(2, "0")}`;
 			}
 		},
 		changeTheme() {
