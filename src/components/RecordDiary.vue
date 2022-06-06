@@ -136,6 +136,12 @@
 											class="q-field__native q-placeholder"
 											style="height: 52px"
 										></textarea>
+										<textarea
+											class="q-field__native q-placeholder"
+											style="height: 32px"
+											type="text"
+											name="img"
+										></textarea>
 									</div>
 								</div></div
 						></label>
@@ -212,7 +218,6 @@
 					</div>
 				</div>
 				<input type="text" name="time" style="visibility: hidden" v-model="form.time" />
-				<input type="text" name="img" />
 			</form>
 		</div>
 	</div>
