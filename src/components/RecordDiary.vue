@@ -39,7 +39,6 @@
 					</button>
 					<div class="record-header row justify-center">
 						<button
-
 							tabindex="0"
 							type="submit"
 							role="button"
@@ -51,9 +50,8 @@
 									class="q-btn__content text-center col items-center q-anchor--skip justify-center row"
 									><div>{{ moments("M") }}月{{ moments("D") }}日 {{ moments("T") }}</div></span
 								></span
-							></button
-						>
-					
+							>
+						</button>
 					</div>
 					<div class="error-msg" style="display: none"></div>
 					<button
@@ -129,7 +127,7 @@
 										style=""
 									>
 										<textarea
-                    v-model="form.content"
+											v-model="form.content"
 											name="content"
 											tabindex="0"
 											rows="1"
@@ -138,6 +136,8 @@
 											class="q-field__native q-placeholder"
 											style="height: 52px"
 										></textarea>
+										<input type="text" name="time" style="visibility: hidden" v-model="form.time" />
+										<input type="text" name="img" />
 									</div>
 								</div></div
 						></label>
@@ -183,28 +183,33 @@
 											class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
 										>
 											<div class="q-field__native row items-center">
-												<select name="weather" class="form-control info-select" @click="select('blur')" @change="select('focus')">
-<option value="晴" selected>晴</option>
-<option value="多云">多云</option>
-<option value="阴">阴</option>
-<option value="雨">雨</option>
-<option value="雷阵雨">雷阵雨</option>
-<option value="雪">雪</option>
-<option value="大风">大风</option>
-<option value="大雾">大雾</option>
-<option value="冰雹">冰雹</option>
-<option value="雾霾">雾霾</option>
-<option value="沙尘暴">沙尘暴</option>
-<option value="日出">日出</option>
-<option value="日落">日落</option>
-<option value="深夜">深夜</option>
-</select>
-											<span class="select">◢</span>
+												<select
+													name="weather"
+													class="form-control info-select"
+													@click="select('blur')"
+													@change="select('focus')"
+												>
+													<option value="晴" selected>晴</option>
+													<option value="多云">多云</option>
+													<option value="阴">阴</option>
+													<option value="雨">雨</option>
+													<option value="雷阵雨">雷阵雨</option>
+													<option value="雪">雪</option>
+													<option value="大风">大风</option>
+													<option value="大雾">大雾</option>
+													<option value="冰雹">冰雹</option>
+													<option value="雾霾">雾霾</option>
+													<option value="沙尘暴">沙尘暴</option>
+													<option value="日出">日出</option>
+													<option value="日落">日落</option>
+													<option value="深夜">深夜</option>
+												</select>
+												<span class="select">◢</span>
 											</div>
 										</div>
-									
-									</div></div
-							></label>
+									</div>
+								</div></label
+							>
 						</div>
 					</div>
 				</div>
@@ -231,6 +236,7 @@ export default {
 	methods: {
 		moments(type) {
 			let time = new Date();
+			this.form.time = time / 1000;
 			switch (type) {
 				case "Y":
 					return time.getFullYear();
@@ -239,7 +245,7 @@ export default {
 				case "D":
 					return time.getDate();
 				case "T":
-					return `${time.getHours()}:${(time.getMinutes()+'').padStart(2,'0')}`;
+					return `${time.getHours()}:${(time.getMinutes() + "").padStart(2, "0")}`;
 				case "O":
 					return time / 1000;
 			}
@@ -273,48 +279,48 @@ export default {
 				},
 			});
 		},
-		select:(method)=>{
-	if (method=="focus") {
-			document.querySelector(".select").style.transform="rotate(45deg) scale(0.7)";
-		
-	}else{
-			document.querySelector(".select").style.transform="rotate(225deg) scale(0.7)";
-
-	}
-		}
+		select: (method) => {
+			if (method == "focus") {
+				document.querySelector(".select").style.transform = "rotate(45deg) scale(0.7)";
+			} else {
+				document.querySelector(".select").style.transform = "rotate(225deg) scale(0.7)";
+			}
+		},
 	},
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.select{
+.select {
 	transform: rotate(45deg) scale(0.7);
 	color: #a2a2a2;
 }
 .form-control {
-    display: block;
-    width: 100%;
-    height: 34px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #a2a2a2;
-    background-color: #fff;
-    background-image: none;
-    border: none;
-   }
+	display: block;
+	width: 100%;
+	height: 34px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #a2a2a2;
+	background-color: #fff;
+	background-image: none;
+	border: none;
+}
 
-select::-ms-expand { display: none; }     
+select::-ms-expand {
+	display: none;
+}
 
-/* 定义隐藏下拉框默认样式及图片覆盖下拉按钮 */   
-.info-select{
-    width: 50px;
-    outline:none;
-    appearance:none;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    -ms-appearance:none;
-    /* background: url(img/down.png) no-repeat scroll right center transparent;            */
+/* 定义隐藏下拉框默认样式及图片覆盖下拉按钮 */
+.info-select {
+	width: 50px;
+	outline: none;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	/* background: url(img/down.png) no-repeat scroll right center transparent;            */
 }
 body {
 	font-family: "LXGW WenKai Lite", sans-serif;
@@ -15233,7 +15239,6 @@ a {
 	width: 90vw;
 	height: auto;
 	padding-top: 100px;
-	
 }
 
 .list-image {
