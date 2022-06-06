@@ -140,10 +140,10 @@
 								</div></div
 						></label>
 					</div>
-					<div class="record-border color-divider color-bg-content">
+					<div class="record-border color-divider color-bg-content" style="margin-top:20px">
 						<label
 							for="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
-							class="q-field row no-wrap items-start record-text color-bg-content color-text q-textarea q-textarea--autogrow q-field--borderless q-validation-component"
+							class="q-field row no-wrap items-start record-text2 color-bg-content color-text q-textarea q-textarea--autogrow q-field--borderless q-validation-component"
 							style="margin: 12px 32px 24px; font-size: 15px"
 							><div class="q-field__inner relative-position col self-stretch">
 								<div tabindex="-1" class="q-field__control relative-position row no-wrap">
@@ -15336,7 +15336,12 @@ a {
 	margin: 28px 12px 12px 12px;
 	line-height: 180%;
 }
-
+.record-text2 {
+	min-height: 100px !important;
+	box-shadow: none !important;
+	margin: 28px 12px 12px 12px;
+	line-height: 180%;
+}
 .record-border {
 	border-width: 2px;
 	border-style: solid;
