@@ -136,8 +136,6 @@
 											class="q-field__native q-placeholder"
 											style="height: 52px"
 										></textarea>
-										<input type="text" name="time" style="visibility: hidden" v-model="form.time" />
-										<input type="text" name="img" />
 									</div>
 								</div></div
 						></label>
@@ -213,6 +211,8 @@
 						</div>
 					</div>
 				</div>
+				<input type="text" name="time" style="visibility: hidden" v-model="form.time" />
+				<input type="text" name="img" />
 			</form>
 		</div>
 	</div>
