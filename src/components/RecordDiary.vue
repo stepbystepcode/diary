@@ -9,6 +9,7 @@
 						tabindex="0"
 						type="button"
 						role="button"
+						onclick="window.location.href='/'"
 						class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--round q-btn--actionable q-focusable q-hoverable q-btn--wrap"
 					>
 						<span class="q-focus-helper"></span
@@ -151,12 +152,12 @@
 										class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
 										style=""
 									>
-										<textarea
+										<input
 											class="q-field__native q-placeholder"
 											style="height: 22px !important"
 											type="text"
 											name="img"
-										></textarea>
+										>
 									</div>
 								</div></div
 						></label>
