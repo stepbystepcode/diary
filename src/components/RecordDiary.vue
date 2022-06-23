@@ -114,7 +114,7 @@
 				</div>
 				<!---->
 			</header>
-			<form action="https://codingboy.tk/diary/insert.php" method="post">
+			<form action="https://www.codingboy.xyz/insert.php" method="post">
 				<div class="content list-content">
 					<div class="record-border color-divider color-bg-content">
 						<label
@@ -294,7 +294,7 @@ export default {
 		},
 		submit: () => {
 			console.log(this.form);
-			axios.post("https://codingboy.tk/diary/insert.php", this.form, {
+			axios.post("https://www.codingboy.xyz/insert.php", this.form, {
 				headers: {
 					"Content-Type": "application/x-www-form-urlencoded",
 				},
