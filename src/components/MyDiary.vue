@@ -288,7 +288,7 @@ body {
 	font-family: "LXGW WenKai Lite";
 }
 .light .color-bg-list {
-	height: 100vh;
+	height: 100%;
 	background-color: #fafafa;
 }
 .dark .color-bg-content {
