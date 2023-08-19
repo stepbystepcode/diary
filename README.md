@@ -1,5 +1,5 @@
 # diary
-
+use node v17.9.1
 ## Project setup
 ```
 npm install

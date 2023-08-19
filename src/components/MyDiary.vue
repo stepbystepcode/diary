@@ -36,7 +36,7 @@
 										<path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path></svg></i></span
 						></span>
 					</button>
-					<div class="text-header color-text">一步一个脚印的日记本</div>
+					<div class="text-header color-text">Step by step の Diary</div>
 					<button
 						tabindex="0"
 						type="button"
@@ -147,7 +147,7 @@ export default {
 		};
 	},
 	mounted() {
-		this.axios.get("https://www.codingboy.xyz/fetch.php").then((res) => {
+		this.axios.get("http://localhost/fetch.php").then((res) => {
 			this.lists = res.data.reverse();
 			console.log(this.lists);
 			for (let i = 0; i < this.lists.length; i++) {
