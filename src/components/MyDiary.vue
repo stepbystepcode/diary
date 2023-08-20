@@ -147,7 +147,7 @@ export default {
 		};
 	},
 	mounted() {
-		this.axios.get("http://localhost/fetch.php").then((res) => {
+		this.axios.get("https://stepbystep.000.pe/fetch.php").then((res) => {
 			this.lists = res.data.reverse();
 			console.log(this.lists);
 			for (let i = 0; i < this.lists.length; i++) {

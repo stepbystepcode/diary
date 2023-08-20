@@ -294,7 +294,7 @@ export default {
 		},
 		submit: () => {
 			console.log(this.form);
-			axios.post("https://www.codingboy.xyz/insert.php", this.form, {
+			axios.post("https://stepbystep.000.pe/record.php", this.form, {
 				headers: {
 					"Content-Type": "application/x-www-form-urlencoded",
 				},
