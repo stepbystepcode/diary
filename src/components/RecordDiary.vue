@@ -184,7 +184,7 @@
 									><span
 										class="q-btn__content text-center items-center q-anchor--skip justify-center row"
 									>
-										Redmi 10X
+										Redmi Note 12 Turbo
 									</span></span
 								>
 							</button>
