@@ -148,7 +148,8 @@ export default {
 	},
 	mounted() {
 		this.axios.get("https://hello.stepbystep.cf/fetch.php").then((res) => {
-			this.lists = res.data.reverse();
+			//this.lists = res.data.reverse();
+			this.lists = res.data;
 			console.log(this.lists);
 			for (let i = 0; i < this.lists.length; i++) {
 				let array = this.lists[i].img.split(" ");
