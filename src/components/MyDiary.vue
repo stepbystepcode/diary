@@ -109,8 +109,8 @@
 										:onInit="onInit"
 										:onBeforeSlide="onBeforeSlide"
 									>
-										<a v-for="(img, i) in imgList[index]" :key="i" :href="img">
-											<img class="list-image q-mr-sm" alt="img1" :src="img" />
+										<a v-for="(img, i) in imgList[index]" :key="i" :href="`https://img.gejiba.com/images/${img}`">
+											<img class="list-image q-mr-sm" alt="img1" :src="`https://img.gejiba.com/images/${img}`" />
 										</a>
 									</lightgallery>
 								</div>
