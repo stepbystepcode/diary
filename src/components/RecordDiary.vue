@@ -286,14 +286,7 @@ export default {
 
 			// document.querySelector("diary").classList.add("dark");
 		},
-		onInit: () => {
-			console.log("lightGallery has been initialized");
-		},
-		onBeforeSlide: () => {
-			console.log("calling before slide");
-		},
 		submit: () => {
-			console.log(this.form);
 			axios.post("https://hello.stepbystep.cf/record.php", this.form, {
 				headers: {
 					"Content-Type": "application/x-www-form-urlencoded",

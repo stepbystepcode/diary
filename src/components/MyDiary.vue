@@ -117,7 +117,7 @@
 							</div>
 							<div class="row items-center q-mt-md no-wrap">
 								<div class="list-desc-text color-desc">
-									{{ article.content.length - 7 }} 字 · Redmi 10X · {{ article.weather }}
+									{{ article.content.length - 7 }} 字 · Redmi Note 12 Turbo · {{ article.weather }}
 								</div>
 								<div class="q-space"></div>
 							</div>
