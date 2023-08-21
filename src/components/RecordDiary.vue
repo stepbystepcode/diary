@@ -3,6 +3,7 @@
 		<div class="q-layout q-layout--standard" style="min-height: 274px">
 			<header
 				class="q-header q-layout__section--marginal bg-normal text-primary shadow-transition color-bg-content fixed-top"
+				style="height: 100vh"
 			>
 				<div class="header row items-center justify-between q-px-md">
 					<button
@@ -15170,7 +15171,6 @@ body.body--dark {
 .content {
 	max-width: 800px;
 	margin: 0 auto;
-	height: 100vh;
 	padding-top: 72px;
 }
 
