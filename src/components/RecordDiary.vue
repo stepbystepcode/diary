@@ -325,7 +325,9 @@ export default {
 select::-ms-expand {
 	display: none;
 }
-
+.diary{
+	height: 100vh!important;
+}
 /* 定义隐藏下拉框默认样式及图片覆盖下拉按钮 */
 .info-select {
 	width: 50px;
@@ -15442,8 +15444,6 @@ body.body--dark .color-bg-normal {
 
 body.body--dark .color-bg-content {
 	background-color: #292828;
-}.color-bg-content{
-	height: 100vh;
 }
 
 body.body--dark .color-bg-list {
