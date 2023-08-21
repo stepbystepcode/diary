@@ -114,7 +114,7 @@
 				</div>
 				<!---->
 			</header>
-			<form action="https://hello.stepbystep.cf/insert.php" method="post">
+			<form action="https://hello.stepbystep.cf/record.php" method="post">
 				<div class="content list-content">
 					<div class="record-border color-divider color-bg-content">
 						<label
