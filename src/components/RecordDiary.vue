@@ -15170,6 +15170,7 @@ body.body--dark {
 .content {
 	max-width: 800px;
 	margin: 0 auto;
+	height: 100vh;
 	padding-top: 72px;
 }
 
