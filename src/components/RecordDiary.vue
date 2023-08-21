@@ -3,7 +3,6 @@
 		<div class="q-layout q-layout--standard" style="min-height: 274px">
 			<header
 				class="q-header q-layout__section--marginal bg-normal text-primary shadow-transition color-bg-content fixed-top"
-				style="height: 100vh"
 			>
 				<div class="header row items-center justify-between q-px-md">
 					<button
@@ -15443,6 +15442,8 @@ body.body--dark .color-bg-normal {
 
 body.body--dark .color-bg-content {
 	background-color: #292828;
+}.color-bg-content{
+	height: 100vh;
 }
 
 body.body--dark .color-bg-list {
