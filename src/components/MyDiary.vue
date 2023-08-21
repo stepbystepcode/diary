@@ -205,12 +205,16 @@ body {
 	font-family: "LXGW WenKai Lite", sans-serif;
 }
 @font-face {
+	font-family: "LXGW WenKai Lite";
+	src: url(https://www.stepbystep.cf/assets/LXGWWenKaiLite-Regular.ttf);
+}
+@font-face {
 	font-family: number;
-	src: url(https://npm.elemecdn.com/stepbystep-blog@1.1.5/diary/fonts/HelveticaNeueLTPro-ThEx.otf);
+	src: url(https://www.stepbystep.cf/assets/HelveticaNeueLTPro-ThEx.otf);
 }
 @font-face {
 	font-family: Montserrat-Regular;
-	src: url(https://npm.elemecdn.com/stepbystep-blog@1.1.5/diary/fonts/Montserrat-Regular.otf);
+	src: url(https://www.stepbystep.cf/assets/Montserrat-Regular.otf);
 	font-weight: 400;
 	font-style: normal;
 }
