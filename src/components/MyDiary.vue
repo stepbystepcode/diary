@@ -1,5 +1,5 @@
 <template>
-	<div class="diary light">
+	<div class="diary light" style="height: 100vh;">
 		<div class="color-bg-list q-layout q-layout--standard">
 			<header
 				class="q-header q-layout__section--marginal bg-normal text-primary shadow-transition color-bg-content fixed-top"
